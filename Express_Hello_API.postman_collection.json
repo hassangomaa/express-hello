@@ -1,0 +1,91 @@
+{
+    "info": {
+        "name": "Express Hello API",
+        "description": "Postman collection for the Express Hello application",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Welcome Route",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        ""
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Users",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/users",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "users"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"id\": \"1\",\n    \"name\": \"John Doe\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/users",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "users"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Delete User",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/users/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "users",
+                        "1"
+                    ]
+                }
+            }
+        }
+    ]
+}
